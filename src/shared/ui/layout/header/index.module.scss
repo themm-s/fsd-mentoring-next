@@ -1,0 +1,43 @@
+@import '@/_app/styles';
+
+.navBar {
+  padding: 12px 0;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1024px;
+  justify-content: space-between;
+  @include font(16px, #cacaca, 600);
+
+  .logo {
+    background-size: 100%;
+    width: 36px;
+    height: 36px;
+    background-image: url('/icon.svg');
+  }
+
+  .navBarLeft,
+  .navBarLeftList {
+    display: flex;
+    align-items: center;
+    gap: $gapNavBar;
+  }
+
+  .navUser {
+    gap: 8px;
+  }
+
+  .navUser,
+  .navBarRight {
+    display: flex;
+    align-items: center;
+  }
+
+  .navBarRight {
+    gap: 8px;
+  }
+}
+
+.logoutButton {
+  color: #ff0000 !important;
+}

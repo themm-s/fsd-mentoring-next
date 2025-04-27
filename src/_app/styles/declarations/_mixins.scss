@@ -1,0 +1,14 @@
+@mixin font($size, $color: #cacaca, $weight: 400, $lineHeight: false) {
+  font: {
+    size: $size;
+    weight: $weight;
+  }
+
+  color: $color;
+
+  @if $lineHeight {
+    line-height: $lineHeight;
+  } @else {
+    line-height: 1.2em;
+  }
+}
